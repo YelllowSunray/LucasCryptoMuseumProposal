@@ -9,6 +9,7 @@ import { Container } from './Container'
 
 const links = [
   { href: '#about', label: 'About' },
+  { href: '#market-size', label: 'Market Size' },
   { href: '#exhibitions', label: 'Proposed Exhibitions' },
   { href: '#revenue', label: 'Let\'s Talk Money' },
   { href: '#contact', label: 'Contact' },
@@ -18,10 +19,12 @@ function NavLink({
   href,
   children,
   className,
+  onClick,
 }: {
   href: string
   children: React.ReactNode
   className?: string
+  onClick?: () => void
 }) {
   return (
     <Link
@@ -32,6 +35,7 @@ function NavLink({
         'dark:text-gray-300 dark:hover:text-blue-400',
         className
       )}
+      onClick={onClick}
     >
       {children}
     </Link>
@@ -63,13 +67,18 @@ function MobileNav() {
               transition={{ delay: index * 0.1 }}
               className="block"
             >
-              <NavLink 
+              <Link 
                 href={href} 
-                className="block py-2"
+                className={clsx(
+                  'block py-2',
+                  'text-base font-medium transition-colors duration-200',
+                  'text-gray-700 hover:text-blue-600',
+                  'dark:text-gray-300 dark:hover:text-blue-400'
+                )}
                 onClick={() => close()}
               >
                 {label}
-              </NavLink>
+              </Link>
             </motion.div>
           ))}
         </div>

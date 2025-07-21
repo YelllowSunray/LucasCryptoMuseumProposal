@@ -388,7 +388,7 @@ export default function Home() {
       </section>
 
       {/* Key Stats Section */}
-      <section className="section-padding bg-white dark:bg-gray-900">
+      <section id="market-size" className="section-padding bg-white dark:bg-gray-900">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-8">
             <BentoCard
@@ -730,7 +730,7 @@ export default function Home() {
       </section>
 
       {/* Projected Revenue Section */}
-      <section className="section-padding bg-white dark:bg-gray-900">
+      <section id="revenue" className="section-padding bg-white dark:bg-gray-900">
         <div className="container">
           <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
             Let's Talk Money: Projected Revenue
