@@ -8,6 +8,7 @@ import { TestimonialGrid } from "@/components/Testimonials";
 import { AnimatedNumber } from "@/components/AnimatedNumber";
 import { PlusGrid } from "@/components/PlusGrid";
 import Link from 'next/link'
+import { useState } from "react";
 
 // Helper function to format numbers
 const formatNumber = (value: number): string => {
@@ -945,7 +946,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Get Involved Section */}
+      <section className="section-padding bg-white dark:bg-gray-900">
+        <div className="container max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            Get Involved
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
+            Ready to shape the future of crypto education?<br/>
+            Join us in building a revolutionary space that makes cryptocurrency understandable and accessible for everyone.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" className="inline-block px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">Contact Us</a>
+            <a href="#about" className="inline-block px-6 py-3 rounded-lg bg-white text-blue-600 border border-blue-600 font-semibold hover:bg-blue-50 dark:bg-gray-900 dark:hover:bg-gray-800 transition-colors">Learn More</a>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
+      <section id="contact" className="section-padding bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
+        <div className="container max-w-xl mx-auto">
+          <h2 className="text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            Contact Us
+          </h2>
+          <ContactForm />
+        </div>
+      </section>
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-white">
         <div className="container">
@@ -954,5 +980,43 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function ContactForm() {
+  const [submitted, setSubmitted] = useState(false);
+
+  if (submitted) {
+    return (
+      <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 p-6 rounded-xl text-center shadow-lg">
+        <h3 className="text-2xl font-semibold mb-2">Thank you!</h3>
+        <p>Your message has been sent. We'll get back to you soon.</p>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      action="https://formspree.io/f/mvgqkzdo"
+      method="POST"
+      className="space-y-6 bg-white/80 dark:bg-gray-900/80 p-8 rounded-xl shadow-lg"
+      onSubmit={e => {
+        setTimeout(() => setSubmitted(true), 100); // Simulate instant feedback
+      }}
+    >
+      <div>
+        <label htmlFor="name" className="block font-medium mb-1">Name</label>
+        <input type="text" id="name" name="name" required className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label htmlFor="email" className="block font-medium mb-1">Email</label>
+        <input type="email" id="email" name="email" required className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label htmlFor="message" className="block font-medium mb-1">Message</label>
+        <textarea id="message" name="message" required rows={5} className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <button type="submit" className="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
+    </form>
   );
 }
