@@ -76,7 +76,9 @@ const tiers = [
       "Small gift shop",
       "Basic guided tours",
       "Perfect for testing market"
-    ]
+    ],
+    visitors: "10,000 – 20,000",
+    investment: "€1M – €2M"
   },
   {
     name: "Small/Mid Museum",
@@ -101,7 +103,9 @@ const tiers = [
       "Complete workshop program",
       "AR/VR experiences",
       "Regular events & networking"
-    ]
+    ],
+    visitors: "50,000 – 100,000",
+    investment: "€5M – €10M"
   },
   {
     name: "Full Museum",
@@ -126,7 +130,9 @@ const tiers = [
       "VIP memberships",
       "Large visitor capacity",
       "Full educational program"
-    ]
+    ],
+    visitors: "150,000 – 250,000",
+    investment: "€15M – €25M"
   }
 ];
 
@@ -288,19 +294,28 @@ export default function Home() {
       <section className="relative py-32 px-4 overflow-hidden">
         <GradientBackground />
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-              A Proposal for:<br/>The World's First<br/>Cryptocurrency Museum
-            </h1>
-            <p className="text-2xl text-gray-600 dark:text-gray-300">
-              A revolutionary space where cryptocurrency becomes understandable, trustworthy, and accessible for everyone.
-            </p>
-            <p className="text-center italic text-lg md:text-xl text-gray-700 dark:text-gray-200 mt-6 font-semibold">
-              I want to dearly thank all my friends like my Mother, Father, Sister, Max, Sebastian, Simon, Peter, Kirstin, Goedele, Eliza, Lorenzo, and Lucas. Their ideas, feedback (always constructive), support for a fool like me.
-            </p>
-            <div className="flex gap-6">
-              <Button href="#contact" variant="primary">Contact Us</Button>
-              <Button href="#about" variant="outline">Explore Proposal</Button>
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex-1 max-w-3xl space-y-8">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+                A Proposal for:<br/>The World's First<br/>Cryptocurrency Museum
+              </h1>
+              <p className="text-2xl text-gray-600 dark:text-gray-300">
+                A revolutionary space where cryptocurrency becomes understandable, trustworthy, and accessible for everyone.
+              </p>
+              <p className="text-center italic text-lg md:text-xl text-gray-700 dark:text-gray-200 mt-6 font-semibold">
+                I want to dearly thank all my friends like my Mother, Father, Sister, Max, Sebastian, Simon, Peter, Kirstin, Goedele, Eliza, Lorenzo, and Lucas. Their ideas, feedback (always constructive), support for a fool like me.
+              </p>
+              <div className="flex gap-6">
+                <Button href="#contact" variant="primary">Contact Us</Button>
+                <Button href="#about" variant="outline">Explore Proposal</Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center lg:justify-end">
+              <img 
+                src="/images/Section1PicV2.png" 
+                alt="Cryptocurrency Museum Concept" 
+                className="max-w-full h-auto rounded-xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -513,7 +528,7 @@ export default function Home() {
       </section>
 
       {/* Exhibition Styles Section */}
-      <section id="market-size" className="section-padding bg-white dark:bg-gray-900">
+      <section className="section-padding bg-white dark:bg-gray-900">
         <div className="container">
           <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
             Justification of Exhibition Styles
@@ -535,7 +550,7 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-8 text-center text-gray-600 dark:text-gray-400 text-sm">
-              <span className="italic">“The future of museums lies in blending technology, storytelling, and cultural context to create participatory, transformative experiences.”</span><br/>
+              <span className="italic">"The future of museums lies in blending technology, storytelling, and cultural context to create participatory, transformative experiences."</span><br/>
               <Link href="https://www.tandfonline.com/doi/full/10.1080/09647775.2020.1847587" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[Source: Parry, R. (2021). Museums in a Digital Age. Museum Management and Curatorship]</Link>
             </p>
               </div>
@@ -657,6 +672,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* The Urgent Need for Education & Safety Section */}
+      <section className="section-padding bg-white dark:bg-gray-900">
+        <div className="container">
+          <h2 className="text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            The Urgent Need for Education & Safety
+          </h2>
+          <p className="text-center text-lg mb-8 text-gray-700 dark:text-gray-300">
+            The scale of crypto theft and scams shows why this museum is desperately needed
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {/* Crypto Theft Stats */}
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
+              <div className="text-2xl mb-3">💸</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">$1.7B</div>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">Lost to crypto scams in 2024</p>
+              <a href="https://www.fbi.gov/news/press-releases/fbi-releases-2024-internet-crime-report" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">FBI Internet Crime Report 2024 →</a>
+            </div>
+
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
+              <div className="text-2xl mb-3">🚨</div>
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">$3.9B</div>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">Total crypto crime losses in 2024</p>
+              <a href="https://www.chainalysis.com/reports/2024-crypto-crime-report/" target="_blank" className="text-purple-600 dark:text-purple-400 text-sm hover:underline">Chainalysis 2024 Report →</a>
+            </div>
+
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
+              <div className="text-2xl mb-3">📚</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">57%</div>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">Can pass a basic crypto literacy quiz</p>
+              <a href="https://cryptoliteracy.org/insights/" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">CryptoLiteracy.org →</a>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-500/30 rounded-xl">
+            <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">This Museum Will Change Everything</h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              With crypto adoption growing but theft and scams reaching billions, 
+              we need a safe space where people can learn, understand, and protect themselves.
+            </p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
+              <span>• Interactive learning experiences</span>
+              <span>• Real-world security demonstrations</span>
+              <span>• Expert guidance and education</span>
+              </div>
+          </div>
+        </div>
+      </section>
+
       {/* Who Are We Serving? Section */}
       <section id="audience" className="section-padding bg-white dark:bg-gray-900">
         <div className="container">
@@ -665,29 +730,30 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* New to Crypto */}
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full flex flex-col items-center p-6">
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full">
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-4xl">👥</span>
+                <span className="text-3xl">👥</span>
                 <span className="font-bold text-xl">New to Crypto</span>
-                </div>
+              </div>
               <div className="w-full flex flex-col items-center mb-3">
                 <span className="inline-block text-3xl font-extrabold text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-xl mb-2 shadow">
                   51.5%
                 </span>
                 <span className="text-base font-medium text-gray-700 dark:text-gray-300 text-center mb-1">of non-owners cite lack of knowledge as the main barrier</span>
                 <a href="https://nftevening.com/crypto-ownership-report/" target="_blank" className="text-blue-600 hover:underline text-sm font-semibold mt-1">NFTevening 2025</a>
-                </div>
+              </div>
               <ul className="list-disc ml-6 text-gray-700 dark:text-gray-300 mb-2 text-base">
                 <li>People who have heard about crypto but don't understand it</li>
                 <li>New users wanting to learn safely</li>
               </ul>
-                </div>
+            </div>
+
             {/* Institutions */}
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full flex flex-col items-center p-6">
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full">
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-4xl">🏢</span>
+                <span className="text-3xl">🏢</span>
                 <span className="font-bold text-xl">Institutions</span>
-                </div>
+              </div>
               <div className="w-full flex flex-col items-center mb-3">
                 <span className="inline-block text-3xl font-extrabold text-purple-700 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 px-4 py-2 rounded-xl mb-2 shadow">
                   71%
@@ -701,10 +767,11 @@ export default function Home() {
                 <li>Skeptics who need proof before trusting crypto companies</li>
               </ul>
             </div>
+
             {/* Crypto Enthusiasts */}
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full flex flex-col items-center p-6">
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full">
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-4xl">🚀</span>
+                <span className="text-3xl">🚀</span>
                 <span className="font-bold text-xl">Crypto Enthusiasts</span>
               </div>
               <div className="w-full flex flex-col items-center mb-3">
@@ -857,9 +924,22 @@ export default function Home() {
                   </div>
                 </div>
 
+                {/* Visitors Section */}
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold mb-4 flex items-center text-indigo-600 dark:text-indigo-400">
+                    <span className="mr-2">👥</span> Expected Visitors
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-indigo-900/10 dark:to-indigo-800/20">
+                      <span className="text-gray-600 dark:text-gray-400">Annual Visitors</span>
+                      <span className="font-semibold text-indigo-600 dark:text-indigo-400">{tier.visitors}</span>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Features Section */}
                 <div>
-                  <h4 className="text-lg font-semibold mb-4 flex items-center text-indigo-600 dark:text-indigo-400">
+                  <h4 className="text-lg font-semibold mb-4 flex items-center text-teal-600 dark:text-teal-400">
                     <span className="mr-2">✨</span> Key Features
                   </h4>
                   <ul className="space-y-2">
@@ -956,12 +1036,16 @@ export default function Home() {
             Get Involved
           </h2>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
-            Ready to shape the future of crypto education?<br/>
+            Ready to shape the future of crypto education?
             Join us in building a revolutionary space that makes cryptocurrency understandable and accessible for everyone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="inline-block px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">Contact Us</a>
-            <a href="#about" className="inline-block px-6 py-3 rounded-lg bg-white text-blue-600 border border-blue-600 font-semibold hover:bg-blue-50 dark:bg-gray-900 dark:hover:bg-gray-800 transition-colors">Learn More</a>
+            <Button href="#contact" variant="primary">
+              Contact Us
+            </Button>
+            <Button href="#about" variant="outline">
+              Learn More
+            </Button>
           </div>
         </div>
       </section>
@@ -979,18 +1063,31 @@ export default function Home() {
             </div>
             {/* Contact Info Card (now below the form) */}
             <div className="flex-1 flex flex-col justify-center">
-              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-8 rounded-xl shadow-lg h-full flex flex-col items-center text-center">
-                <h3 className="text-2xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Other Ways to Reach Us</h3>
-                <div className="flex flex-col gap-4 text-lg">
-                  <div className="flex items-center gap-3 justify-center">
-                    <span className="text-blue-500 text-2xl">📧</span>
-                    <span className="font-bold">Email:</span>
-                    <a href="mailto:Iyersamir@gmail.com" className="text-blue-700 dark:text-blue-300 hover:underline font-medium">Iyersamir@gmail.com</a>
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
+                <div className="flex items-center justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Other Ways to Reach Us</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center gap-3">
+                        <span className="text-2xl">📧</span>
+                        <a href="mailto:Iyersamir@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
+                          Iyersamir@gmail.com
+                        </a>
+          </div>
+                      <div className="flex items-center justify-center gap-3">
+                        <span className="text-2xl">📞</span>
+                        <a href="tel:+31687343078" className="text-purple-600 dark:text-purple-400 hover:underline font-semibold">
+                          +31 687343078
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 justify-center">
-                    <span className="text-green-500 text-2xl">📞</span>
-                    <span className="font-bold">Phone:</span>
-                    <a href="tel:+31687343078" className="text-blue-700 dark:text-blue-300 hover:underline font-medium">+31 687343078</a>
+                  <div className="ml-6">
+                    <img 
+                      src="/images/ContactFormProfilePic.jpg" 
+                      alt="Contact Profile" 
+                      className="w-16 h-16 rounded-full object-cover border-2 border-blue-200 dark:border-blue-700"
+                    />
                   </div>
                 </div>
               </div>
@@ -1007,44 +1104,54 @@ export default function Home() {
           </h2>
           <ul className="list-decimal ml-6 space-y-3 text-base text-gray-700 dark:text-gray-300">
             <li>
-              <a href="https://nftevening.com/crypto-ownership-report/" target="_blank" className="text-blue-600 hover:underline font-semibold">NFTevening 2025 Crypto Ownership Report</a> – Global and US crypto ownership statistics, barriers to adoption, and demographic trends.
+              <a href="https://nftevening.com/crypto-ownership-report/" target="_blank" className="text-blue-600 hover:underline font-semibold">NFTevening 2025 Crypto Ownership Report</a> – Global and US crypto adoption statistics
             </li>
             <li>
-              <a href="https://coinlaw.io/cryptocurrency-adoption-by-institutional-investors-statistics/" target="_blank" className="text-purple-600 hover:underline font-semibold">CoinLaw 2025: Cryptocurrency Adoption by Institutional Investors</a> – Institutional investment rates and trends in digital assets.
+              <a href="https://coinlaw.io/cryptocurrency-adoption-by-institutional-investors-statistics/" target="_blank" className="text-blue-600 hover:underline font-semibold">CoinLaw 2025 Institutional Adoption Report</a> – Institutional crypto investment trends
             </li>
             <li>
-              <a href="https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/" target="_blank" className="text-blue-600 hover:underline font-semibold">Pew Research Center, Oct 2024</a> – Public confidence and trust gap in cryptocurrency.
+              <a href="https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/" target="_blank" className="text-blue-600 hover:underline font-semibold">Pew Research Center, Oct 2024</a> – Public confidence in cryptocurrency safety
             </li>
             <li>
-              <a href="https://www.statista.com/statistics/1202503/global-cryptocurrency-user-base/" target="_blank" className="text-blue-600 hover:underline font-semibold">Statista, Dec 2024: Global Cryptocurrency User Base</a> – Global crypto user growth and market size.
+              <a href="https://www.bankofcanadamuseum.ca/2023/11/understanding-cryptocurrencies/" target="_blank" className="text-blue-600 hover:underline font-semibold">Bank of Canada Museum, 2023</a> – Current state of crypto education in museums
             </li>
             <li>
-              <a href="https://www.gemini.com/state-of-crypto-2025" target="_blank" className="text-blue-600 hover:underline font-semibold">Gemini State of Crypto, May 2025</a> – Survey on museum interest and crypto adoption.
+              <a href="https://www.kansascityfed.org/research/research-working-papers/financial-literacy-risk-tolerance-and-cryptocurrency-ownership-in-the-united-states/" target="_blank" className="text-blue-600 hover:underline font-semibold">Federal Reserve Bank of Kansas City, 2024</a> – Financial literacy and crypto ownership correlation
             </li>
             <li>
-              <a href="https://crypto.com/en/research/2024-crypto-market-sizing-report" target="_blank" className="text-blue-600 hover:underline font-semibold">Crypto.com Research, Dec 2024</a> – Market growth and new user statistics.
+              <a href="https://cryptoliteracy.org/insights/" target="_blank" className="text-blue-600 hover:underline font-semibold">CryptoLiteracy.org, 2024</a> – Global crypto literacy assessment results
             </li>
             <li>
-              <a href="https://www.aam-us.org/2024/09/20/demographics-of-us-museum-goers-a-2024-annual-survey-of-museum-goers-data-story-update/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Survey, Sept 2024</a> – Museum visitor preferences and engagement.
+              <a href="https://www.fbi.gov/news/press-releases/fbi-releases-2024-internet-crime-report" target="_blank" className="text-blue-600 hover:underline font-semibold">FBI Internet Crime Report, 2024</a> – Crypto scam and fraud statistics
             </li>
             <li>
-              <a href="https://www.aam-us.org/2024/10/25/museums-and-community-perceptions-and-engagement-a-2024-annual-survey-of-museum-goers-data-story/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Engagement & Community Study, Oct 2024</a> – Museum engagement and community connection statistics.
+              <a href="https://www.chainalysis.com/reports/2024-crypto-crime-report/" target="_blank" className="text-blue-600 hover:underline font-semibold">Chainalysis 2024 Crypto Crime Report</a> – Total crypto crime losses and trends
             </li>
             <li>
-              <a href="https://www.aam-us.org/2024/11/22/homeschool-families-a-2024-annual-survey-of-museum-goers-data-story/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Learning Report, Nov 2024</a> – Hands-on learning demand in museums.
+              <a href="https://www.statista.com/statistics/1202503/global-cryptocurrency-user-base/" target="_blank" className="text-blue-600 hover:underline font-semibold">Statista, Dec 2024</a> – Global cryptocurrency user base statistics
             </li>
             <li>
-              <a href="https://www.bankofcanadamuseum.ca/2023/11/understanding-cryptocurrencies/" target="_blank" className="text-blue-600 hover:underline font-semibold">Bank of Canada Museum, 2023</a> – Public crypto education and museum context.
+              <a href="https://www.gemini.com/state-of-crypto-2025" target="_blank" className="text-blue-600 hover:underline font-semibold">Gemini State of Crypto, May 2025</a> – Survey on museum interest and crypto adoption
             </li>
             <li>
-              <a href="https://www.kansascityfed.org/research/research-working-papers/financial-literacy-risk-tolerance-and-cryptocurrency-ownership-in-the-united-states/" target="_blank" className="text-blue-600 hover:underline font-semibold">Federal Reserve Bank of Kansas City, 2024</a> – Financial literacy and crypto trust.
+              <a href="https://crypto.com/en/research/2024-crypto-market-sizing-report" target="_blank" className="text-blue-600 hover:underline font-semibold">Crypto.com Research, Dec 2024</a> – Market growth and new user statistics
             </li>
             <li>
-              <a href="https://www.tandfonline.com/doi/full/10.1080/09647775.2020.1847587" target="_blank" className="text-blue-600 hover:underline font-semibold">Parry, R. (2021). Museums in a Digital Age. Museum Management and Curatorship</a> – The future of museum styles and digital transformation.
+              <a href="https://www.aam-us.org/2024/09/20/demographics-of-us-museum-goers-a-2024-annual-survey-of-museum-goers-data-story-update/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Survey, Sept 2024</a> – Museum visitor preferences and engagement
+            </li>
+            <li>
+              <a href="https://www.aam-us.org/2024/10/25/museums-and-community-perceptions-and-engagement-a-2024-annual-survey-of-museum-goers-data-story/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Engagement Study, Oct 2024</a> – Museum engagement and community connection statistics
+            </li>
+            <li>
+              <a href="https://www.aam-us.org/2024/11/22/homeschool-families-a-2024-annual-survey-of-museum-goers-data-story/" target="_blank" className="text-blue-600 hover:underline font-semibold">AAM Learning Report, Nov 2024</a> – Hands-on learning demand in museums
+            </li>
+            <li>
+              <a href="https://www.tandfonline.com/doi/full/10.1080/09647775.2020.1847587" target="_blank" className="text-blue-600 hover:underline font-semibold">Parry, R. (2021). Museums in a Digital Age. Museum Management and Curatorship</a> – The future of museum styles and digital transformation
             </li>
           </ul>
         </div>
       </section>
+
       {/* Footer */}
       <footer className="py-8 px-4 bg-gray-900 text-white">
         <div className="container">
