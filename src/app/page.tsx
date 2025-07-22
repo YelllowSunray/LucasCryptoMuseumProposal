@@ -508,96 +508,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Target Audience Section */}
-      <section className="section-padding bg-white dark:bg-gray-900">
+      {/* Exhibition Styles Section */}
+      <section id="market-size" className="section-padding bg-white dark:bg-gray-900">
         <div className="container">
           <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-            Who Are We Serving?
+            Justification of Exhibition Styles
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
-              <div className="text-center mb-6">
-                <span className="text-4xl mb-4 block">👥</span>
-                <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">New to Crypto</h3>
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-center mb-6 text-blue-700 dark:text-blue-300">Museum as a Mesh of Anthropology, Drama, and Tech</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <h4 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Anthropology</h4>
+                <p className="text-gray-700 dark:text-gray-300">Explores how people interact with money, technology, and each other. The museum will showcase the cultural and social impact of cryptocurrency, connecting the past, present, and future of human exchange.</p>
               </div>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-blue-500">•</span>
-                  People who have heard about crypto but don't understand it
-                </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-blue-500">•</span>
-                  New users wanting to learn safely
-                </li>
-              </ul>
-            </div>
-
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
-              <div className="text-center mb-6">
-                <span className="text-4xl mb-4 block">🏢</span>
-                <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">Institutions</h3>
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <h4 className="text-xl font-bold mb-2 text-purple-600 dark:text-purple-400">Drama</h4>
+                <p className="text-gray-700 dark:text-gray-300">Uses storytelling, immersive theater, and role-play to make learning memorable. Visitors will experience the drama of crypto history, security breaches, and innovation through interactive exhibits and live demonstrations.</p>
               </div>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-purple-500">•</span>
-                  Institutional clients interested in crypto custody
-                </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-purple-500">•</span>
-                  Schools and universities seeking financial education
-                </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-purple-500">•</span>
-                  Skeptics who need proof before trusting crypto companies
-                </li>
-              </ul>
-            </div>
-
-            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
-              <div className="text-center mb-6">
-                <span className="text-4xl mb-4 block">🚀</span>
-                <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">Crypto Enthusiasts</h3>
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <h4 className="text-xl font-bold mb-2 text-green-600 dark:text-green-400">Tech</h4>
+                <p className="text-gray-700 dark:text-gray-300">Leverages the latest technology—AR, VR, simulators, and real blockchain tools—to create hands-on, future-focused experiences. This approach makes complex concepts accessible and engaging for all ages.</p>
               </div>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-green-500">•</span>
-                  Crypto fans who want to see how custody works
-                </li>
-                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
-                  <span className="text-green-500">•</span>
-                  Active traders seeking deeper understanding
-                </li>
-              </ul>
             </div>
+            <p className="mt-8 text-center text-gray-600 dark:text-gray-400 text-sm">
+              <span className="italic">“The future of museums lies in blending technology, storytelling, and cultural context to create participatory, transformative experiences.”</span><br/>
+              <Link href="https://www.tandfonline.com/doi/full/10.1080/09647775.2020.1847587" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[Source: Parry, R. (2021). Museums in a Digital Age. Museum Management and Curatorship]</Link>
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Why Section */}
-      <section className="section-padding bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
-        <div className="container">
-          <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-            Why Does The Public Need This?
-          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Key Points */}
             <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 h-full">
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-blue-50 dark:bg-blue-900/10">
                   <span className="text-blue-500 mt-1">⚠️</span>
-                  <p className="text-gray-700 dark:text-gray-300">Many don't trust companies holding their crypto money</p>
+                  <div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-1">
+                      Many don't trust companies holding their crypto money
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      63% of Americans have little to no confidence in the safety and reliability of cryptocurrency. <Link href="https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[Pew Research Center, Oct 2024]</Link>
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-purple-50 dark:bg-purple-900/10">
                   <span className="text-purple-500 mt-1">🎯</span>
-                  <p className="text-gray-700 dark:text-gray-300">No museum today focuses on explaining crypto custody and security in simple ways</p>
+                  <div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-1">
+                      No museum today focuses on explaining crypto custody and security in simple ways
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      Most public crypto education is online or through private workshops; no major museum exists for this. <Link href="https://www.bankofcanadamuseum.ca/2023/11/understanding-cryptocurrencies/" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[Bank of Canada Museum, 2023]</Link>
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-green-50 dark:bg-green-900/10">
                   <span className="text-green-500 mt-1">💡</span>
-                  <p className="text-gray-700 dark:text-gray-300">This museum will help people feel safe and excited about crypto</p>
+                  <div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-1">
+                      This museum will help people feel safe and excited about crypto
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      56% of Americans who do not own crypto cite lack of knowledge and safety concerns as their main barrier to entry. <Link href="https://nftevening.com/crypto-ownership-report/" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[NFTevening Crypto Ownership Report, 2025]</Link>
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-indigo-50 dark:bg-indigo-900/10">
                   <span className="text-indigo-500 mt-1">📈</span>
-                  <p className="text-gray-700 dark:text-gray-300">Supports financial literacy and builds trust in new digital money systems</p>
+                  <div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-1">
+                      Supports financial literacy and builds trust in new digital money systems
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      Higher financial literacy is strongly linked to greater confidence and safer participation in crypto markets. <Link href="https://www.kansascityfed.org/research/research-working-papers/financial-literacy-risk-tolerance-and-cryptocurrency-ownership-in-the-united-states/" target="_blank" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline">[Federal Reserve Bank of Kansas City, 2024]</Link>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -664,6 +648,71 @@ export default function Home() {
                   </Link>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section className="section-padding bg-white dark:bg-gray-900">
+        <div className="container">
+          <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            Who Are We Serving?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
+              <div className="text-center mb-6">
+                <span className="text-4xl mb-4 block">👥</span>
+                <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">New to Crypto</h3>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-blue-500">•</span>
+                  People who have heard about crypto but don't understand it
+                </li>
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-blue-500">•</span>
+                  New users wanting to learn safely
+                </li>
+              </ul>
+            </div>
+
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
+              <div className="text-center mb-6">
+                <span className="text-4xl mb-4 block">🏢</span>
+                <h3 className="text-xl font-semibold text-purple-600 dark:text-purple-400">Institutions</h3>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-purple-500">•</span>
+                  Institutional clients interested in crypto custody
+                </li>
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-purple-500">•</span>
+                  Schools and universities seeking financial education
+                </li>
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-purple-500">•</span>
+                  Skeptics who need proof before trusting crypto companies
+                </li>
+              </ul>
+            </div>
+
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 hover:scale-105 transition-transform">
+              <div className="text-center mb-6">
+                <span className="text-4xl mb-4 block">🚀</span>
+                <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">Crypto Enthusiasts</h3>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-green-500">•</span>
+                  Crypto fans who want to see how custody works
+                </li>
+                <li className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                  <span className="text-green-500">•</span>
+                  Active traders seeking deeper understanding
+                </li>
+              </ul>
             </div>
           </div>
         </div>
