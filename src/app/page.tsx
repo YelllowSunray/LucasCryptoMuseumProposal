@@ -312,9 +312,14 @@ export default function Home() {
           </div>
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="text-center">
-                <img 
+                <Image 
                   src="/images/Section1PicV2.png" 
                   alt="Cryptocurrency Museum Concept" 
+                  width={600}
+                  height={400}
+                  priority
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                   className="max-w-full h-auto rounded-xl shadow-2xl"
                 />
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">
@@ -363,15 +368,10 @@ export default function Home() {
               className="h-full"
             />
             <BentoCard
-              eyebrow="Our Guiding Principles"
-              title="The Principles That Drive Us"
+              eyebrow="Our Guiding Values"
+              title="The Values That Drive Us"
               description={
                 <div className="grid grid-cols-6 gap-4">
-                  <div className="flex flex-col items-center text-center gap-2">
-                    <span className="text-2xl">🔍</span>
-                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Transparency</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">We show what is—open systems build real trust.</p>
-                  </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🎓</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Education</h4>
@@ -383,9 +383,14 @@ export default function Home() {
                     <p className="text-xs text-gray-600 dark:text-gray-400">We meet people where they are, with patience and care.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
-                    <span className="text-2xl">🧭</span>
-                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Truth</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">We stay grounded in facts—even when they're uncomfortable.</p>
+                    <span className="text-2xl">⚖️</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Fairness</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We stand for equal opportunity, human dignity, and basic needs like health, housing, and financial inclusion.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🌱</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Sustainability</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">No waste—systems should serve both people and the planet, now and in the future.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🚀</span>
@@ -400,6 +405,65 @@ export default function Home() {
                 </div>
               }
               className="h-full md:col-span-2"
+            />
+            <BentoCard
+              eyebrow="Core Principles"
+              title="The Foundation of Our Approach"
+              description={
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">⚖️</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">1. Accountability Over Privilege</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">No one is above the system. Everyone plays by the same rules—whether you're an individual, a bank, or a government.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">💎</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">2. Value Must Match Contribution</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Rewards come from real value creation, not manipulation, speculation, or insider advantage.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🤝</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">3. Give and Take Go Together</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Systems work when contribution and benefit are balanced. You can't extract endlessly without giving back.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🌳</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">4. Long-Term Thinking Wins</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We reject short-term gain at long-term expense. Decisions must consider impact on future generations, not just the next quarter.</p>
+                  </div>
+                </div>
+              }
+              className="h-full"
+            />
+            <BentoCard
+              eyebrow="What's the current state?"
+              title=""
+              description={
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🏦</span>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">Financial Institutions</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Like banks are a massive waste of money (basically warehouses of money)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🇺🇸</span>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">USA Debt Crisis</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">USA is abusing the world by excessively printing USD with 36T Debt</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🌍</span>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">Global Debt Traps</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">EU/IMF/World Bank debt trap African/South-American Countries</p>
+                    </div>
+                  </div>
+                </div>
+              }
+              className="h-full"
             />
           </div>
         </div>
