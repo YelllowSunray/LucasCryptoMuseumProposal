@@ -239,6 +239,27 @@ const revenueStreams = [
 
 const exhibitions = [
   {
+    title: "Types of Exhibitions",
+    description: "Our museum will feature three main categories of interactive experiences designed to educate, challenge, and inspire visitors of all ages.",
+    icon: "🏛️",
+    isHeader: true
+  },
+  {
+    title: "1. Explaining Crypto",
+    description: "Hands-on, 'Empathetic' exhibits that teach concepts like scarcity, blockchain/ledgers/blocks etc., trading.",
+    icon: "🎓"
+  },
+  {
+    title: "2. Flaws of Crypto",
+    description: "Games that ask participants to figure out how to solve cryptocurrencies biggest flaws like regulation. Games will ask participants to find balance between 2 opposing forces. To inspire children, leaders of the future.",
+    icon: "🎮"
+  },
+  {
+    title: "3. Coding Stations",
+    description: "Powered by Cursor AI to create software for absolute beginners who want to get their hands dirty that solve crypto's many flaws.",
+    icon: "💻"
+  },
+  {
     title: "Crypto Time Machine",
     description: "Journey through the history of cryptocurrency, from Bitcoin's creation to modern innovations.",
     icon: "🕰️"
@@ -304,7 +325,7 @@ export default function Home() {
             </p>
               <p className="text-center italic text-lg md:text-xl text-gray-700 dark:text-gray-200 mt-6 font-semibold">
                 I want to dearly thank all my friends like my Mother, Father, Sister, Max, Sebastian, Simon, Peter, Kirstin, Goedele, Eliza, Lorenzo, and Lucas. Their ideas, feedback (always constructive), support for a fool like me.
-              </p>
+            </p>
             <div className="flex gap-6">
                 <Button href="#contact" variant="primary">Contact Us</Button>
                 <Button href="#about" variant="outline">Explore Proposal</Button>
@@ -331,7 +352,7 @@ export default function Home() {
                       height={60}
                       className="rounded-full border-2 border-white shadow-lg"
                     />
-                  </div>
+        </div>
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">
                   Let's make it Star Trek Looking - Because Aliens of course!
