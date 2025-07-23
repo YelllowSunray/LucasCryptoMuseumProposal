@@ -312,19 +312,35 @@ export default function Home() {
           </div>
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="text-center">
-                <Image 
-                  src="/images/Section1PicV2.png" 
-                  alt="Cryptocurrency Museum Concept" 
-                  width={600}
-                  height={400}
-                  priority
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                  className="max-w-full h-auto rounded-xl shadow-2xl"
-                />
+                <div className="relative inline-block">
+                  <Image 
+                    src="/images/Section1PicV2.png" 
+                    alt="Cryptocurrency Museum Concept" 
+                    width={600}
+                    height={400}
+                    priority
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                    className="max-w-full h-auto rounded-xl shadow-2xl"
+                  />
+                  <div className="absolute bottom-2 right-2">
+                    <Image 
+                      src="/images/MadhuIage.jpeg" 
+                      alt="Madhu" 
+                      width={60}
+                      height={60}
+                      className="rounded-full border-2 border-white shadow-lg"
+                    />
+                  </div>
+                </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">
                   Let's make it Star Trek Looking - Because Aliens of course!
                 </p>
+                <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                    My father is a visionary, and humble, and that this proposal is composed entirely of his ideas and ideals, and that this is his christmas present.
+                  </p>
+                </div>
         </div>
             </div>
           </div>
