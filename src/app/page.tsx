@@ -239,27 +239,6 @@ const revenueStreams = [
 
 const exhibitions = [
   {
-    title: "Types of Exhibitions",
-    description: "Our museum will feature three main categories of interactive experiences designed to educate, challenge, and inspire visitors of all ages.",
-    icon: "🏛️",
-    isHeader: true
-  },
-  {
-    title: "1. Explaining Crypto",
-    description: "Hands-on, 'Empathetic' exhibits that teach concepts like scarcity, blockchain/ledgers/blocks etc., trading.",
-    icon: "🎓"
-  },
-  {
-    title: "2. Flaws of Crypto",
-    description: "Games that ask participants to figure out how to solve cryptocurrencies biggest flaws like regulation. Games will ask participants to find balance between 2 opposing forces. To inspire children, leaders of the future.",
-    icon: "🎮"
-  },
-  {
-    title: "3. Coding Stations",
-    description: "Powered by Cursor AI to create software for absolute beginners who want to get their hands dirty that solve crypto's many flaws.",
-    icon: "💻"
-  },
-  {
     title: "Crypto Time Machine",
     description: "Journey through the history of cryptocurrency, from Bitcoin's creation to modern innovations.",
     icon: "🕰️"
@@ -395,13 +374,13 @@ export default function Home() {
             <BentoCard
               eyebrow="Vision"
               title="A World with fewer Borders and no abject Poverty."
-              description="A world with fewer borders and no abject poverty. A future where everyone can freely exchange value through a single, open, decentralized currency without restrictions. Financial systems are transparent, equitable, and built on trust, ensuring no one is excluded or left behind."
+              description="A world with fewer borders and no abject poverty. A future where everyone can freely exchange value through a single, open, decentralized currency without restrictions. Financial systems are transparent, equitable, and built on trust, ensuring no one is excluded or left behind. The museum will be a cornerstone of this vision."
               className="h-full"
             />
             <BentoCard
               eyebrow="Mission"
               title="Building Trust in a Borderless Financial Future"
-              description="To build a foundation for a borderless, inclusive financial future by helping people experience and understand crypto firsthand. Through immersive exhibits and transparent education, the museum fosters trust in decentralized technologies—empowering individuals to take control of their financial lives with confidence."
+              description="To build a foundation for a borderless, inclusive financial future by helping people experience and understand crypto firsthand. Through immersive exhibits and transparent education, we foster trust in decentralized technologies—empowering individuals to take control of their financial lives with confidence."
               className="h-full"
             />
             <BentoCard
@@ -715,6 +694,50 @@ export default function Home() {
           <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
             Proposed Exhibitions
           </h2>
+          
+          {/* Types of Exhibitions Subsection */}
+          <div className="mb-12">
+            <h3 className="text-3xl font-semibold text-center mb-6 text-blue-700 dark:text-blue-300">
+              Types of Exhibitions
+            </h3>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
+              Our museum will feature three main categories of interactive experiences designed to educate, challenge, and inspire visitors of all ages.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">🎓</span>
+                  <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400">Section 1 of Musuem: Let's Explain Crypto</h4>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300">Hands-on, 'Empathetic' exhibits that teach concepts like scarcity, blockchain/ledgers/blocks etc., trading.</p>
+              </div>
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">🎮</span>
+                  <h4 className="text-xl font-bold text-purple-600 dark:text-purple-400">Section 2 of Musuem: Let's Solve Crypto's Biggest Flaws</h4>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300">Games that ask participants to figure out how to solve cryptocurrencies biggest flaws like regulation. Games will ask participants to find balance between 2 opposing forces. To inspire children, leaders of the future.</p>
+              </div>
+              <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">💻</span>
+                  <h4 className="text-xl font-bold text-green-600 dark:text-green-400">Section 3 of Musuem: Let's get Vibe-Coding *AI Auto-Complete Coding</h4>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300">Powered by Cursor AI to create software for absolute beginners who want to get their hands dirty that solve crypto's many flaws.</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Proposed Exhibits Subsection */}
+          <div className="mb-8">
+            <h3 className="text-3xl font-semibold text-center mb-4 text-blue-700 dark:text-blue-300">
+              Proposed Exhibits:
+            </h3>
+            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+              First Set of Exhibits: Explaining Crypto
+            </h4>
+          </div>
+          
           <PlusGrid items={exhibitions} />
         </div>
       </section>
