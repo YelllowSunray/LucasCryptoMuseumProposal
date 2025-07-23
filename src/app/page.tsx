@@ -296,26 +296,31 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 max-w-3xl space-y-8">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
                 A Proposal for:<br/>The World's First<br/>Cryptocurrency Museum
-              </h1>
-              <p className="text-2xl text-gray-600 dark:text-gray-300">
-                A revolutionary space where cryptocurrency becomes understandable, trustworthy, and accessible for everyone.
-              </p>
+            </h1>
+            <p className="text-2xl text-gray-600 dark:text-gray-300">
+              A revolutionary space where cryptocurrency becomes understandable, trustworthy, and accessible for everyone.
+            </p>
               <p className="text-center italic text-lg md:text-xl text-gray-700 dark:text-gray-200 mt-6 font-semibold">
                 I want to dearly thank all my friends like my Mother, Father, Sister, Max, Sebastian, Simon, Peter, Kirstin, Goedele, Eliza, Lorenzo, and Lucas. Their ideas, feedback (always constructive), support for a fool like me.
               </p>
-              <div className="flex gap-6">
+            <div className="flex gap-6">
                 <Button href="#contact" variant="primary">Contact Us</Button>
                 <Button href="#about" variant="outline">Explore Proposal</Button>
-              </div>
             </div>
+          </div>
             <div className="flex-1 flex justify-center lg:justify-end">
-              <img 
-                src="/images/Section1PicV2.png" 
-                alt="Cryptocurrency Museum Concept" 
-                className="max-w-full h-auto rounded-xl shadow-2xl"
-              />
+              <div className="text-center">
+                <img 
+                  src="/images/Section1PicV2.png" 
+                  alt="Cryptocurrency Museum Concept" 
+                  className="max-w-full h-auto rounded-xl shadow-2xl"
+                />
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">
+                  Let's make it Star Trek Looking - Because Aliens of course!
+                </p>
+        </div>
             </div>
           </div>
         </div>
@@ -347,60 +352,54 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <BentoCard
               eyebrow="Vision"
-              title="Understanding Through Experience"
-              description="To create a space where crypto is understood, trusted, and accessible for everyone."
+              title="A World Without Borders or Poverty"
+              description="A World Without Borders or Poverty. A future where everyone, everywhere, can exchange value freely—through one open, decentralized currency. Where financial systems are transparent, fair, and built on trust, not control. No one is excluded, no one is left behind."
               className="h-full"
             />
             <BentoCard
               eyebrow="Mission"
-              title="Education & Trust"
-              description="To educate the public on crypto custody and security with transparency, hands-on experiences, and emotional reassurance."
+              title="Inspiring Trust Through Understanding"
+              description="To build a foundation for a borderless, inclusive financial future by helping people experience and understand crypto firsthand. Through immersive exhibits and transparent education, the museum fosters trust in decentralized technologies—empowering individuals to take control of their financial lives with confidence."
               className="h-full"
             />
             <BentoCard
-              eyebrow="Core Values"
-              title="Our Guiding Principles"
+              eyebrow="Our Guiding Principles"
+              title="The Principles That Drive Us"
               description={
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-900/30">
-                      <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                    <span className="font-semibold">Transparency</span>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">Clear and open about how crypto works</span>
+                <div className="grid grid-cols-6 gap-4">
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🔍</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Transparency</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We show what is—open systems build real trust.</p>
                   </div>
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-purple-100 dark:bg-purple-900/30">
-                      <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
-                    </div>
-                    <span className="font-semibold">Education</span>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">Making complex concepts simple</span>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🎓</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Education</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Knowledge is a tool for freedom, not control.</p>
                   </div>
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-100 dark:bg-green-900/30">
-                      <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <span className="font-semibold">Innovation</span>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">Using technology to enhance learning</span>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">💛</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Compassion</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We meet people where they are, with patience and care.</p>
                   </div>
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-indigo-100 dark:bg-indigo-900/30">
-                      <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                    <span className="font-semibold">Emotional safety</span>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">Building trust and confidence</span>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🧭</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Truth</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We stay grounded in facts—even when they're uncomfortable.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">🚀</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Innovation</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We move boldly, turning ideas into impact.</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">✋</span>
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Experience</h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Feeling is remembering—lived experience is the greatest teacher.</p>
                   </div>
                 </div>
               }
-              className="md:col-span-2"
+              className="h-full md:col-span-2"
             />
           </div>
         </div>
@@ -422,7 +421,7 @@ export default function Home() {
               }
               description={
                 <>
-                  The crypto market continues to grow, with millions of new users joining every year.{' '}
+                  The crypto market continues to grow, with millions of new users joining every year. This massive user base represents a huge potential audience for educational experiences like a crypto museum.{' '}
                   <Link 
                     href="https://www.statista.com/statistics/1202503/global-cryptocurrency-user-base/" 
                     target="_blank"
@@ -445,7 +444,7 @@ export default function Home() {
               }
               description={
                 <>
-                  Most people find crypto confusing or scary, creating a massive opportunity for education.{' '}
+                  Most people find crypto confusing or scary, creating a massive opportunity for education. This trust gap shows exactly why people need a safe, educational space like a crypto museum to build confidence.{' '}
                   <Link 
                     href="https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/" 
                     target="_blank"
@@ -468,7 +467,7 @@ export default function Home() {
               }
               description={
                 <>
-                  Over half of respondents would visit a crypto museum to learn safely.{' '}
+                  Over half of respondents would visit a crypto museum to learn safely. This direct survey data proves there's strong public demand for exactly the type of educational experience we're proposing.{' '}
                   <Link 
                     href="https://www.gemini.com/state-of-crypto-2025" 
                     target="_blank"
@@ -491,13 +490,105 @@ export default function Home() {
               }
               description={
                 <>
-                  The global crypto user base grew by 76 million in 2024.{' '}
+                  The global crypto user base grew by 76 million in 2024. This explosive growth means more people than ever need education about crypto, creating perfect timing for a museum to serve this expanding audience.{' '}
                   <Link 
                     href="https://crypto.com/en/research/2024-crypto-market-sizing-report" 
                     target="_blank"
                     className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
                   >
                     [Source: Crypto.com Research, Dec 2024]
+                  </Link>
+                </>
+              }
+            />
+            <BentoCard
+              eyebrow="Total Market Value"
+              title={
+                <div className="text-4xl font-bold text-green-600 dark:text-green-400">
+                  <AnimatedNumber value={2.1} suffix="T" />
+                  <span className="text-lg text-gray-600 dark:text-gray-400 block mt-2">
+                    Global Crypto Market Cap
+                  </span>
+                </div>
+              }
+              description={
+                <>
+                  Total cryptocurrency market capitalization reached $2.1 trillion in 2024. This massive financial ecosystem affects everyone's future, making crypto education essential and a museum highly relevant to public interest.{' '}
+                  <Link 
+                    href="https://coinmarketcap.com/charts/" 
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                  >
+                    [Source: CoinMarketCap, Dec 2024]
+                  </Link>
+                </>
+              }
+            />
+            <BentoCard
+              eyebrow="Institutional Holdings"
+              title={
+                <div className="text-4xl font-bold text-orange-600 dark:text-orange-400">
+                  <AnimatedNumber value={68} suffix="B" />
+                  <span className="text-lg text-gray-600 dark:text-gray-400 block mt-2">
+                    Under Binance Custody
+                  </span>
+                </div>
+              }
+              description={
+                <>
+                  Binance holds over $68 billion in cryptocurrency assets under custody. This institutional scale shows crypto is mainstream, and people need to understand how these massive systems work through educational experiences like museums.{' '}
+                  <Link 
+                    href="https://www.binance.com/en/blog/ecosystem/binance-custody-secures-over-68-billion-in-digital-assets-4214998246849031684" 
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                  >
+                    [Source: Binance Custody Report, 2024]
+                  </Link>
+                </>
+              }
+            />
+            <BentoCard
+              eyebrow="Average Investment"
+              title={
+                <div className="text-4xl font-bold text-teal-600 dark:text-teal-400">
+                  <AnimatedNumber value={7.4} suffix="K" />
+                  <span className="text-lg text-gray-600 dark:text-gray-400 block mt-2">
+                    Average Crypto Portfolio
+                  </span>
+                </div>
+              }
+              description={
+                <>
+                  Average crypto investor holds $7,400 worth of digital assets. With real money at stake, people have strong motivation to learn about crypto, making a museum an attractive destination for education and understanding.{' '}
+                  <Link 
+                    href="https://www.gemini.com/state-of-crypto-2025" 
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                  >
+                    [Source: Gemini State of Crypto, 2025]
+                  </Link>
+                </>
+              }
+            />
+            <BentoCard
+              eyebrow="Daily Trading Volume"
+              title={
+                <div className="text-4xl font-bold text-pink-600 dark:text-pink-400">
+                  <AnimatedNumber value={85} suffix="B" />
+                  <span className="text-lg text-gray-600 dark:text-gray-400 block mt-2">
+                    Daily Trading Volume
+                  </span>
+                </div>
+              }
+              description={
+                <>
+                  Global crypto exchanges process $85 billion in daily trading volume. This incredible daily activity shows crypto is a major part of global finance, creating huge public interest in understanding how it all works through educational venues like museums.{' '}
+                  <Link 
+                    href="https://www.coingecko.com/en/global_charts" 
+                    target="_blank"
+                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+                  >
+                    [Source: CoinGecko Global Charts, 2024]
                   </Link>
                 </>
               }
@@ -689,22 +780,22 @@ export default function Home() {
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">$1.7B</div>
               <p className="text-gray-700 dark:text-gray-300 mb-2">Lost to crypto scams in 2024</p>
               <a href="https://www.fbi.gov/news/press-releases/fbi-releases-2024-internet-crime-report" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">FBI Internet Crime Report 2024 →</a>
-            </div>
+                </div>
 
             <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
               <div className="text-2xl mb-3">🚨</div>
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">$3.9B</div>
               <p className="text-gray-700 dark:text-gray-300 mb-2">Total crypto crime losses in 2024</p>
               <a href="https://www.chainalysis.com/reports/2024-crypto-crime-report/" target="_blank" className="text-purple-600 dark:text-purple-400 text-sm hover:underline">Chainalysis 2024 Report →</a>
-            </div>
+                </div>
 
             <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6 text-center">
               <div className="text-2xl mb-3">📚</div>
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">57%</div>
               <p className="text-gray-700 dark:text-gray-300 mb-2">Can pass a basic crypto literacy quiz</p>
               <a href="https://cryptoliteracy.org/insights/" target="_blank" className="text-blue-600 dark:text-blue-400 text-sm hover:underline">CryptoLiteracy.org →</a>
-            </div>
-          </div>
+                </div>
+                </div>
 
           {/* Call to Action */}
           <div className="text-center p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-500/30 rounded-xl">
@@ -1147,6 +1238,15 @@ export default function Home() {
             </li>
             <li>
               <a href="https://www.tandfonline.com/doi/full/10.1080/09647775.2020.1847587" target="_blank" className="text-blue-600 hover:underline font-semibold">Parry, R. (2021). Museums in a Digital Age. Museum Management and Curatorship</a> – The future of museum styles and digital transformation
+            </li>
+            <li>
+              <a href="https://coinmarketcap.com/charts/" target="_blank" className="text-blue-600 hover:underline font-semibold">CoinMarketCap, Dec 2024</a> – Global cryptocurrency market capitalization data
+            </li>
+            <li>
+              <a href="https://www.binance.com/en/blog/ecosystem/binance-custody-secures-over-68-billion-in-digital-assets-4214998246849031684" target="_blank" className="text-blue-600 hover:underline font-semibold">Binance Custody Report, 2024</a> – Institutional cryptocurrency custody statistics
+            </li>
+            <li>
+              <a href="https://www.coingecko.com/en/global_charts" target="_blank" className="text-blue-600 hover:underline font-semibold">CoinGecko Global Charts, 2024</a> – Cryptocurrency trading volume and market data
             </li>
           </ul>
         </div>
