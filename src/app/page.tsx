@@ -302,9 +302,7 @@ export default function Home() {
             <p className="text-2xl text-gray-600 dark:text-gray-300">
               A revolutionary space where cryptocurrency becomes understandable, trustworthy, and accessible for everyone.
             </p>
-              <p className="text-center italic text-lg md:text-xl text-gray-700 dark:text-gray-200 mt-6 font-semibold">
-                I want to dearly thank all my friends like my Mother, Father, Sister, Max, Sebastian, Simon, Peter, Kirstin, Goedele, Eliza, Lorenzo, and Lucas. Their ideas, feedback (always constructive), support for a fool like me.
-            </p>
+
             <div className="flex gap-6">
                 <Button href="#contact" variant="primary">Contact Us</Button>
                 <Button href="#about" variant="outline">Explore Proposal</Button>
@@ -323,24 +321,12 @@ export default function Home() {
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                     className="max-w-full h-auto rounded-xl shadow-2xl"
                   />
-                  <div className="absolute bottom-2 right-2">
-                    <Image 
-                      src="/images/MadhuIage.jpeg" 
-                      alt="Madhu" 
-                      width={60}
-                      height={60}
-                      className="rounded-full border-2 border-white shadow-lg"
-                    />
-        </div>
+
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic">
                   Let's make it Star Trek Looking - Because Aliens of course!
                 </p>
-                <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                    My father is a visionary, and humble, and that this proposal is composed entirely of his ideas and ideals, and that this is his christmas present.
-                  </p>
-                </div>
+
         </div>
             </div>
           </div>
@@ -387,7 +373,7 @@ export default function Home() {
               eyebrow="Our Guiding Values"
               title="The Values That Drive Us"
               description={
-                <div className="grid grid-cols-6 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🎓</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Education</h4>
