@@ -249,6 +249,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Visitors experience the evolution of money from barter to digital crypto through interactive role-play. Dress in 10,000BCE clothes and share resources, then transition to modern clothing while spending virtual BTC. Feel concepts like scarcity through hands-on activities in reconstructed historical societies.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/1.1.png" 
+            alt="What is Money Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "💰"
@@ -264,6 +273,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Build a physical blockchain with giant foam blocks, simulate mining through puzzles, and broadcast transactions to a real-time ledger wall. Create wallets, exchange coins peer-to-peer, and attempt to alter blockchain history to see how immutability prevents tampering. Hands-on hashing games and key recovery exercises make complex concepts intuitive.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/1.2.png" 
+            alt="How does Crypto Work Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "⚙️"
@@ -279,6 +297,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Put yourself in the shoes of both the planet and financial system users. Explore how blockchain must evolve to achieve net-zero emissions and resource sustainability. Compare hidden environmental costs of traditional banking with emerging low-impact blockchain solutions, showing real-world stakes and choices we face.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/1.3.png" 
+            alt="Unsustainability of Crypto Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "🌱"
@@ -294,6 +321,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           On a large screen, become a trader and attempt to buy and sell with real-time BTC/ETH price movements. Simplified RSI and Rate of Change indicators appear below to help you make better predictions and estimate returns of 1-2% plus crypto gains.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/1.4.png" 
+            alt="BTC/ETH Trading Simulator Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "📈"
@@ -310,6 +346,15 @@ const exhibitions = [
           Step into the role of leaders of mineral-rich African or South American nations. Navigate complex choices involving international institutions like the IMF and World Bank, exploring how post-colonial economic systems perpetuate inequality. While one person in the audience keeps printing money to simulate the USA Dollar.
         </p>
         <p className="text-sm text-purple-600 dark:text-purple-400 font-semibold mt-2">*Coolest Exhibition</p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.1.png" 
+            alt="Solve in 2025: Let's try solve Poverty Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "🌍"
@@ -325,6 +370,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Experience the challenge of crypto security firsthand. Visitors gamify the security lessons by attempting to "hack" a mock wallet, understanding the difficulty and importance of strong security measures in protecting digital assets.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.2.png" 
+            alt="Solve in 2026: Let's try hack Crypto Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "🔐"
@@ -340,6 +394,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Kids make choices—like spending all their tokens or ignoring savings—and see real-time consequences unfold in a game world. A live 6-year-old "player" constantly makes the wrong moves, helping other visitors learn by spotting mistakes and correcting them together in a fun, low-stakes environment.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.3.png" 
+            alt="Solve in 2027: Let's try teach financial literacy to a 6 year old Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "🎮"
@@ -355,6 +418,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Put visitors in the role of regulators designing identity and compliance rules to enforce "One Human, One Wallet." Adjust levels of strictness, verification methods, and data sharing to see how choices impact adoption rates, fraud levels, and user privacy. Too much compliance causes friction, while too little leads to scams and mistrust.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.4.png" 
+            alt="Solve in 2027: Let's try regulate / Compliance Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "⚖️"
@@ -370,6 +442,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           This gamified exhibit puts visitors in the middle of a global financial crisis where Bitcoin has overtaken the euro and dollar as the dominant currency, causing massive upheaval—especially for pension holders reliant on collapsing fiat currencies. Visitors must navigate political, economic, and social challenges as governments and institutions scramble to respond.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.5.png" 
+            alt="Solve by 2030: The De Facto Currency Crisis Game Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "🌐"
@@ -385,6 +466,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           At the museum, visitors get some BTC to spend however they like at the kiosk. They receive a special wristband that works like a contactless payment device—simulating a future where crypto payments could even be inside your body. By tapping the wristband, they can easily buy things like cheesecake, experiencing how simple and seamless crypto payments can be.
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/2.6.png" 
+            alt="Let's pay with crypto Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "💳"
@@ -400,6 +490,15 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           In this exhibit, visitors can easily create crypto apps like social media platforms where posts are stored securely on the blockchain, giving users full ownership of their content. They can also build extensions for Worldcoin—the leading crypto passport system—exploring how blockchain can power identity and privacy. The AI guides everyone, even kids and beginners, to make these futuristic tools with no coding experience needed, using Cursor (the future of software dev).
         </p>
+        <div className="mt-4">
+          <Image 
+            src="/exhibitionimages/3.1.png" 
+            alt="Let's build crypto apps with AI Exhibition" 
+            width={300}
+            height={200}
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
       </div>
     ),
     icon: "💻"
@@ -881,7 +980,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
               <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
                 <h4 className="text-xl font-bold mb-2 text-blue-600 dark:text-blue-400">Anthropology</h4>
-                <p className="text-gray-700 dark:text-gray-300">Explores how people interact with money, technology, and each other. The museum will showcase the cultural and social impact of cryptocurrency, connecting the past, present, and future of human exchange.</p>
+                <p className="text-gray-700 dark:text-gray-300">Explores how money and technology shape culture, from the U.S. dollar's role as the global reserve currency and costly SWIFT networks to cryptocurrency's challenge to these systems, linking past trade with a decentralized future.</p>
               </div>
               <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
                 <h4 className="text-xl font-bold mb-2 text-purple-600 dark:text-purple-400">Drama</h4>
