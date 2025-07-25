@@ -584,14 +584,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <BentoCard
               eyebrow="Vision"
-              title="A World with fewer Borders and no abject Poverty."
-              description="A world with fewer borders and no abject poverty. A future where everyone can freely exchange value through a single, open, decentralized currency without restrictions. Financial systems are transparent, equitable, and built on trust, ensuring no one is excluded or left behind. The museum will be a cornerstone of this vision."
+              title="A Museum for the Future of Money"
+              description="A lively crypto museum that helps everyone understand and explore the world of digital money. We show how crypto can create freedom and trust, while also asking big questions about control and responsibility. Knowledge is powerful—like atomic energy—and we want to use it to build a better future."
               className="h-full"
             />
             <BentoCard
               eyebrow="Mission"
-              title="Building Trust in a Borderless Financial Future"
-              description="To build a foundation for a borderless, inclusive financial future by helping people experience and understand crypto firsthand. Through immersive exhibits and transparent education, we foster trust in decentralized technologies—empowering individuals to take control of their financial lives with confidence."
+              title="Building Trust Through Experience"
+              description="We make crypto easy to understand through hands-on exhibits and simple stories. Our goal is to build trust, spark curiosity, and give everyone the confidence to explore this new digital world."
               className="h-full"
             />
             <BentoCard
