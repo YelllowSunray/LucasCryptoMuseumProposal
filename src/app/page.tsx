@@ -1471,6 +1471,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Virtual Crypto Museum & IP Strategy Section */}
+      <section className="section-padding bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
+        <div className="container">
+          <h2 className="text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+            Virtual Crypto Museum & IP Strategy
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Virtual Museum */}
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+              <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Virtual Museum</h3>
+              <div className="space-y-4 text-gray-700 dark:text-gray-300">
+                <p>Build a virtual counterpart of the Blockrise Crypto Museum accessible via web, VR, or AR, allowing global visitors to explore exhibits remotely.</p>
+                <p>Include interactive 3D exhibits, guided tours, and educational content explaining crypto custody and blockchain history.</p>
+                <p>Gamify the experience with quizzes, live transaction feeds, and interactive data visualizations to replicate the real museum's immersive learning environment.</p>
+                <p>Offer 360° virtual walkthroughs or live-streamed events to engage online audiences.</p>
+              </div>
+            </div>
+            {/* IP Strategy */}
+            <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
+              <h3 className="text-2xl font-bold mb-4 text-purple-600 dark:text-purple-400">IP Strategy</h3>
+              <div className="space-y-4 text-gray-700 dark:text-gray-300">
+                <p>Trademark and brand protection for the museum name, visual identity, and unique exhibit concepts.</p>
+                <p>Copyright and licensing for all digital assets—3D models, visual content, and virtual tour materials—to prevent unauthorized reproduction.</p>
+                <p>Develop a virtual content licensing model for educational institutions or partners who want to host the digital museum experience.</p>
+                <p>Explore patent opportunities for proprietary interactive museum technology, such as blockchain-driven provenance displays or digital archiving tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Get Involved Section */}
       <section className="section-padding bg-white dark:bg-gray-900">
         <div className="container max-w-2xl mx-auto text-center">
