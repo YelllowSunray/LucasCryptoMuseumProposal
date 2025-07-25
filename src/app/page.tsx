@@ -387,6 +387,21 @@ const exhibitions = [
       </div>
     ),
     icon: "💳"
+  },
+  {
+    title: "Let's build crypto apps with AI",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Create crypto apps like social media platforms and Worldcoin extensions with AI guidance.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          In this exhibit, visitors can easily create crypto apps like social media platforms where posts are stored securely on the blockchain, giving users full ownership of their content. They can also build extensions for Worldcoin—the leading crypto passport system—exploring how blockchain can power identity and privacy. The AI guides everyone, even kids and beginners, to make these futuristic tools with no coding experience needed, using Cursor (the future of software dev).
+        </p>
+      </div>
+    ),
+    icon: "💻"
   }
 ];
 
@@ -842,7 +857,15 @@ export default function Home() {
             </h4>
           </div>
           
-          <PlusGrid items={exhibitions.slice(4)} />
+          <PlusGrid items={exhibitions.slice(4, 10)} />
+          
+          <div className="mt-12 mb-8">
+            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+              Third Set of Exhibitions: Let's get coding: We'll Teach you/*everyone* Software Dev
+            </h4>
+          </div>
+          
+          <PlusGrid items={exhibitions.slice(10)} />
         </div>
       </section>
 
