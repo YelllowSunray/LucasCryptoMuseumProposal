@@ -602,32 +602,32 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🎓</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Education</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">Knowledge is a tool for freedom, not control.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We demystify money and technology, showing how systems like fiat and blockchain shape our world.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">💛</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Compassion</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">We meet people where they are, with patience and care.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Finance should serve everyone, not exclude—crypto opens doors where traditional systems close them.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">⚖️</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Fairness</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">We stand for equal opportunity, human dignity, and basic needs like health, housing, and financial inclusion.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">It isn't fair that a few nations can print money at will while others bear the cost—decentralized finance levels the field.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🌱</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Sustainability</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">No waste—systems should serve both people and the planet, now and in the future.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Money systems should be transparent, efficient, and sustainable for both people and the planet.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">🚀</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Innovation</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">We move boldly, turning ideas into impact.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">Crypto is a living experiment—where bold ideas become global revolutions.</p>
                   </div>
                   <div className="flex flex-col items-center text-center gap-2">
                     <span className="text-2xl">✋</span>
                     <h4 className="font-semibold text-gray-900 dark:text-white text-sm">Experience</h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">Feeling is remembering—lived experience is the greatest teacher.</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400">We invite visitors to feel and explore the evolution of money—because lived experience is the best teacher.</p>
                   </div>
                 </div>
               }
