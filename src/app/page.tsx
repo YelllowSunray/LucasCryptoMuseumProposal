@@ -239,44 +239,64 @@ const revenueStreams = [
 
 const exhibitions = [
   {
-    title: "Crypto Time Machine",
-    description: "Journey through the history of cryptocurrency, from Bitcoin's creation to modern innovations.",
-    icon: "🕰️"
+    title: "What is Money?",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Role-play historical money systems to feel scarcity and value evolve up to crypto.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Visitors experience the evolution of money from barter to digital crypto through interactive role-play. Dress in 10,000BCE clothes and share resources, then transition to modern clothing while spending virtual BTC. Feel concepts like scarcity through hands-on activities in reconstructed historical societies.
+        </p>
+      </div>
+    ),
+    icon: "💰"
   },
   {
-    title: "Security Theater",
-    description: "Interactive demonstrations of how crypto custody works, featuring real security systems.",
-    icon: "🔐"
+    title: "How does Crypto Work",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Interactive games teach blockchain, mining, wallets, and immutability.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Build a physical blockchain with giant foam blocks, simulate mining through puzzles, and broadcast transactions to a real-time ledger wall. Create wallets, exchange coins peer-to-peer, and attempt to alter blockchain history to see how immutability prevents tampering. Hands-on hashing games and key recovery exercises make complex concepts intuitive.
+        </p>
+      </div>
+    ),
+    icon: "⚙️"
   },
   {
-    title: "Trading Simulator",
-    description: "Experience crypto trading in a safe, guided environment with expert explanations.",
-    icon: "📊"
+    title: "Unsustainability of Crypto",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Explore crypto's environmental impact and the need for greener solutions.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Put yourself in the shoes of both the planet and financial system users. Explore how blockchain must evolve to achieve net-zero emissions and resource sustainability. Compare hidden environmental costs of traditional banking with emerging low-impact blockchain solutions, showing real-world stakes and choices we face.
+        </p>
+      </div>
+    ),
+    icon: "🌱"
   },
   {
-    title: "Blockchain Explorer",
-    description: "Visualize how blockchain works with giant interactive displays and real-time data.",
-    icon: "🔍"
-  },
-  {
-    title: "Innovation Lab",
-    description: "Hands-on area where visitors can create their own tokens and smart contracts.",
-    icon: "🔬"
-  },
-  {
-    title: "NFT Gallery",
-    description: "Showcase of digital art and collectibles, explaining the technology behind NFTs.",
-    icon: "🎨"
-  },
-  {
-    title: "Future of Finance",
-    description: "Explore how crypto is changing banking, investments, and global commerce.",
-    icon: "🌐"
-  },
-  {
-    title: "Kids Crypto Zone",
-    description: "Fun, educational activities teaching children about digital money and security.",
-    icon: "🎮"
+    title: "BTC/ETH Trading Simulator",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Try trading real crypto prices using simple market indicators.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          On a large screen, become a trader and attempt to buy and sell with real-time BTC/ETH price movements. Simplified RSI and Rate of Change indicators appear below to help you make better predictions and estimate returns of 1-2% plus crypto gains.
+        </p>
+      </div>
+    ),
+    icon: "📈"
   }
 ];
 

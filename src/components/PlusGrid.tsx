@@ -8,7 +8,7 @@ export function PlusGridItem({
   className,
 }: {
   title: string
-  description: string
+  description: React.ReactNode
   icon?: React.ReactNode
   className?: string
 }) {
@@ -30,7 +30,7 @@ export function PlusGridItem({
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
         {title}
       </h3>
-      <p className="text-gray-600 dark:text-gray-300">{description}</p>
+      <div className="text-gray-600 dark:text-gray-300">{description}</div>
     </div>
   )
 }
@@ -42,7 +42,7 @@ export function PlusGrid({
   className?: string
   items: {
     title: string
-    description: string
+    description: React.ReactNode
     icon?: React.ReactNode
   }[]
 }) {
