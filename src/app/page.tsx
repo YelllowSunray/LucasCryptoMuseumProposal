@@ -297,6 +297,96 @@ const exhibitions = [
       </div>
     ),
     icon: "📈"
+  },
+  {
+    title: "Solve in 2025: Let's try solve Poverty",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Interactive simulation where visitors become leaders of mineral-rich nations.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Step into the role of leaders of mineral-rich African or South American nations. Navigate complex choices involving international institutions like the IMF and World Bank, exploring how post-colonial economic systems perpetuate inequality. While one person in the audience keeps printing money to simulate the USA Dollar.
+        </p>
+      </div>
+    ),
+    icon: "🌍"
+  },
+  {
+    title: "Solve in 2026: Let's try hack Crypto",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Teaches crypto financial literacy through hands-on security challenges.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Experience the challenge of crypto security firsthand. Visitors gamify the security lessons by attempting to "hack" a mock wallet, understanding the difficulty and importance of strong security measures in protecting digital assets.
+        </p>
+      </div>
+    ),
+    icon: "🔐"
+  },
+  {
+    title: "Solve in 2027: Let's try teach financial literacy to a 6 year old",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Playful gamified exhibition teaching financial literacy to 6-year-olds.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Kids make choices—like spending all their tokens or ignoring savings—and see real-time consequences unfold in a game world. A live 6-year-old "player" constantly makes the wrong moves, helping other visitors learn by spotting mistakes and correcting them together in a fun, low-stakes environment.
+        </p>
+      </div>
+    ),
+    icon: "🎮"
+  },
+  {
+    title: "Solve in 2027: Let's try regulate / Compliance",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          The Compliance Balancing Act game for designing identity and compliance rules.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          Put visitors in the role of regulators designing identity and compliance rules to enforce "One Human, One Wallet." Adjust levels of strictness, verification methods, and data sharing to see how choices impact adoption rates, fraud levels, and user privacy. Too much compliance causes friction, while too little leads to scams and mistrust.
+        </p>
+      </div>
+    ),
+    icon: "⚖️"
+  },
+  {
+    title: "Solve by 2030: The De Facto Currency Crisis Game",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Navigate a global financial crisis where Bitcoin has overtaken traditional currencies.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          This gamified exhibit puts visitors in the middle of a global financial crisis where Bitcoin has overtaken the euro and dollar as the dominant currency, causing massive upheaval—especially for pension holders reliant on collapsing fiat currencies. Visitors must navigate political, economic, and social challenges as governments and institutions scramble to respond.
+        </p>
+      </div>
+    ),
+    icon: "🌐"
+  },
+  {
+    title: "Let's pay with crypto (on us - we pay)",
+    description: (
+      <div>
+        <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
+          <span className="bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded text-sm mr-2">TLDR:</span>
+          Experience real crypto payments with a special wristband at the museum kiosk.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300">
+          At the museum, visitors get some BTC to spend however they like at the kiosk. They receive a special wristband that works like a contactless payment device—simulating a future where crypto payments could even be inside your body. By tapping the wristband, they can easily buy things like cheesecake, experiencing how simple and seamless crypto payments can be.
+        </p>
+      </div>
+    ),
+    icon: "💳"
   }
 ];
 
@@ -744,7 +834,15 @@ export default function Home() {
             </h4>
           </div>
           
-          <PlusGrid items={exhibitions} />
+          <PlusGrid items={exhibitions.slice(0, 4)} />
+          
+          <div className="mt-12 mb-8">
+            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+              Second Set of Exhibits: Games to solve current flaws of Crypto
+            </h4>
+          </div>
+          
+          <PlusGrid items={exhibitions.slice(4)} />
         </div>
       </section>
 
