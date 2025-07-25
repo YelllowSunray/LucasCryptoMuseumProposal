@@ -299,7 +299,7 @@ const exhibitions = [
     icon: "📈"
   },
   {
-    title: "Solve in 2025: Let's try solve Poverty",
+    title: "Solve in 2025: Let's try solve Poverty ©",
     description: (
       <div>
         <p className="font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -309,6 +309,7 @@ const exhibitions = [
         <p className="text-gray-700 dark:text-gray-300">
           Step into the role of leaders of mineral-rich African or South American nations. Navigate complex choices involving international institutions like the IMF and World Bank, exploring how post-colonial economic systems perpetuate inequality. While one person in the audience keeps printing money to simulate the USA Dollar.
         </p>
+        <p className="text-sm text-purple-600 dark:text-purple-400 font-semibold mt-2">*Coolest Exhibition</p>
       </div>
     ),
     icon: "🌍"
@@ -818,21 +819,21 @@ export default function Home() {
               <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-3xl">🎓</span>
-                  <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400">Section 1 of Musuem: Let's Explain Crypto</h4>
+                  <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 cursor-pointer hover:text-blue-800 dark:hover:text-blue-300 transition-colors" onClick={() => document.getElementById('first-set')?.scrollIntoView({ behavior: 'smooth' })}>Section 1 of Musuem: Let's Explain Crypto</h4>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300">Hands-on, 'Empathetic' exhibits that teach concepts like scarcity, blockchain/ledgers/blocks etc., trading.</p>
               </div>
               <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-3xl">🎮</span>
-                  <h4 className="text-xl font-bold text-purple-600 dark:text-purple-400">Section 2 of Musuem: Let's Solve Crypto's Biggest Flaws</h4>
+                  <h4 className="text-xl font-bold text-purple-600 dark:text-purple-400 cursor-pointer hover:text-purple-800 dark:hover:text-purple-300 transition-colors" onClick={() => document.getElementById('second-set')?.scrollIntoView({ behavior: 'smooth' })}>Section 2 of Musuem: Let's Solve Crypto's Biggest Flaws</h4>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300">Games that ask participants to figure out how to solve cryptocurrencies biggest flaws like regulation. Games will ask participants to find balance between 2 opposing forces. To inspire children, leaders of the future.</p>
               </div>
               <div className="card backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-3xl">💻</span>
-                  <h4 className="text-xl font-bold text-green-600 dark:text-green-400">Section 3 of Musuem: Let's get Vibe-Coding *AI Auto-Complete Coding</h4>
+                  <h4 className="text-xl font-bold text-green-600 dark:text-green-400 cursor-pointer hover:text-green-800 dark:hover:text-green-300 transition-colors" onClick={() => document.getElementById('third-set')?.scrollIntoView({ behavior: 'smooth' })}>Section 3 of Musuem: Let's get Vibe-Coding *AI Auto-Complete Coding</h4>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300">Powered by Cursor AI to create software for absolute beginners who want to get their hands dirty that solve crypto's many flaws.</p>
               </div>
@@ -844,7 +845,7 @@ export default function Home() {
             <h3 className="text-3xl font-semibold text-center mb-4 text-blue-700 dark:text-blue-300">
               Proposed Exhibits:
             </h3>
-            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+            <h4 id="first-set" className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
               First Set of Exhibits: Explaining Crypto
             </h4>
           </div>
@@ -852,7 +853,7 @@ export default function Home() {
           <PlusGrid items={exhibitions.slice(0, 4)} />
           
           <div className="mt-12 mb-8">
-            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+            <h4 id="second-set" className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
               Second Set of Exhibits: Games to solve current flaws of Crypto
             </h4>
           </div>
@@ -860,7 +861,7 @@ export default function Home() {
           <PlusGrid items={exhibitions.slice(4, 10)} />
           
           <div className="mt-12 mb-8">
-            <h4 className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
+            <h4 id="third-set" className="text-xl font-medium text-center mb-6 text-gray-600 dark:text-gray-400">
               Third Set of Exhibitions: Let's get coding: We'll Teach you/*everyone* Software Dev
             </h4>
           </div>
