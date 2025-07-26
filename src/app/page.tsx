@@ -10,6 +10,8 @@ import { PlusGrid } from "@/components/PlusGrid";
 import Link from 'next/link'
 import { useState } from "react";
 
+
+
 // Helper function to format numbers
 const formatNumber = (value: number): string => {
   if (value >= 1000000) {
