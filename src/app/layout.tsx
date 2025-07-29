@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { MuseumStructuredData } from '@/components/StructuredData'
+import { ClarityAnalytics } from '@/components/ClarityAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -92,6 +93,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <ClarityAnalytics />
       </body>
     </html>
   )
