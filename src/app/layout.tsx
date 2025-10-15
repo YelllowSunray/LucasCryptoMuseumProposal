@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://lucas-crypto-museum-proposal.vercel.app'),
+  metadataBase: new URL('https://www.reallybigappologytodadmusuem.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://lucas-crypto-museum-proposal.vercel.app',
+    url: 'https://www.reallybigappologytodadmusuem.com',
     title: 'CryptoMuseum - World\'s First Cryptocurrency Museum | Interactive Crypto Education',
     description: 'Discover the world\'s first cryptocurrency museum! Interactive exhibits, hands-on blockchain learning, and crypto safety education. Perfect for beginners, families, and crypto enthusiasts.',
     siteName: 'CryptoMuseum - Interactive Cryptocurrency Education',

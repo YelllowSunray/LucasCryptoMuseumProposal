@@ -54,11 +54,11 @@ export function MuseumStructuredData() {
     "name": "CryptoMuseum - World's First Cryptocurrency Museum",
     "alternateName": ["Crypto Museum", "Cryptocurrency Museum", "Blockchain Museum"],
     "description": "The world's first cryptocurrency museum featuring interactive exhibits, hands-on blockchain learning, and crypto safety education. Making cryptocurrency understandable, trustworthy, and accessible for everyone through immersive educational experiences.",
-    "url": "https://lucas-crypto-museum-proposal.vercel.app",
-    "logo": "https://lucas-crypto-museum-proposal.vercel.app/logos/blockriselogo1.png",
+    "url": "https://www.reallybigappologytodadmusuem.com",
+    "logo": "https://www.reallybigappologytodadmusuem.com/logos/blockriselogo1.png",
     "image": [
-      "https://lucas-crypto-museum-proposal.vercel.app/images/Section1PicV2.png",
-      "https://lucas-crypto-museum-proposal.vercel.app/images/Section1Pic.png"
+      "https://www.reallybigappologytodadmusuem.com/images/Section1PicV2.png",
+      "https://www.reallybigappologytodadmusuem.com/images/Section1Pic.png"
     ],
     "address": {
       "@type": "PostalAddress",

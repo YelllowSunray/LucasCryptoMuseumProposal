@@ -20,7 +20,7 @@ export function SEOHead() {
       
       {/* Twitter additional tags */}
       <meta name="twitter:domain" content="lucas-crypto-museum-proposal.vercel.app" />
-      <meta name="twitter:url" content="https://lucas-crypto-museum-proposal.vercel.app" />
+      <meta name="twitter:url" content="https://www.reallybigappologytodadmusuem.com" />
       
       {/* Mobile app meta tags */}
       <meta name="mobile-web-app-capable" content="yes" />
@@ -44,10 +44,10 @@ export function SEOHead() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "CryptoMuseum",
-            "url": "https://lucas-crypto-museum-proposal.vercel.app",
+            "url": "https://www.reallybigappologytodadmusuem.com",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://lucas-crypto-museum-proposal.vercel.app/?search={search_term_string}",
+              "target": "https://www.reallybigappologytodadmusuem.com/?search={search_term_string}",
               "query-input": "required name=search_term_string"
             },
             "publisher": {
@@ -55,7 +55,7 @@ export function SEOHead() {
               "name": "CryptoMuseum",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://lucas-crypto-museum-proposal.vercel.app/logos/blockriselogo1.png"
+                "url": "https://www.reallybigappologytodadmusuem.com/logos/blockriselogo1.png"
               }
             }
           })

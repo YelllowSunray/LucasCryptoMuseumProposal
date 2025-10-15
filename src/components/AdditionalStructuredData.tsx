@@ -5,8 +5,8 @@ export function AdditionalStructuredData() {
     "@type": "Organization",
     "name": "CryptoMuseum",
     "alternateName": ["Crypto Museum", "Cryptocurrency Museum", "Blockchain Museum"],
-    "url": "https://lucas-crypto-museum-proposal.vercel.app",
-    "logo": "https://lucas-crypto-museum-proposal.vercel.app/logos/blockriselogo1.png",
+    "url": "https://www.reallybigappologytodadmusuem.com",
+    "logo": "https://www.reallybigappologytodadmusuem.com/logos/blockriselogo1.png",
     "description": "World's first cryptocurrency museum dedicated to making blockchain technology accessible and understandable for everyone through interactive exhibits and educational experiences.",
     "foundingDate": "2025",
     "address": {
@@ -69,7 +69,7 @@ export function AdditionalStructuredData() {
     "organizer": {
       "@type": "Organization",
       "name": "CryptoMuseum",
-      "url": "https://lucas-crypto-museum-proposal.vercel.app"
+      "url": "https://www.reallybigappologytodadmusuem.com"
     },
     "offers": {
       "@type": "Offer",
@@ -138,7 +138,7 @@ export function AdditionalStructuredData() {
     "@type": "EducationalOrganization",
     "name": "CryptoMuseum Educational Program",
     "description": "Comprehensive cryptocurrency and blockchain education programs for all ages, from beginners to professionals.",
-    "url": "https://lucas-crypto-museum-proposal.vercel.app",
+    "url": "https://www.reallybigappologytodadmusuem.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "NL",
